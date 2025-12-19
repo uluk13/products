@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let products = JSON.parse(localStorage.getItem("products")) || [];
 
-  // ===== Главная страница =====
+ 
   const productsContainer = document.querySelector(".products");
   if (productsContainer) {
     const renderProducts = () => {
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProducts();
   }
 
-  // ===== Страница корзины =====
+
   const cartList = document.querySelector("#cart-list");
   const cartCount = document.querySelector("#cart-count");
   const cartTotal = document.querySelector("#cart-total");
